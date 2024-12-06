@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'curso-angular-sergi';
+  title = 'hola mundo desde angular:';
+  subtitle = 'Es lo primero qu escribo!';
 }

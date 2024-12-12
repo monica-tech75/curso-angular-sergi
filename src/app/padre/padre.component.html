@@ -1,2 +1,19 @@
 <h1>Esto es un componente</h1>
-<!-- <app-hijo /> -->
+
+
+<app-hijo [recibeHijo]="mensajePadre" (mensajeDesdeHijo)="recibirMensaje($event)" (incrementarDesdeHijo)="incrementar()"
+  (decrementarDesdeHijo)="decrementar()"></app-hijo>
+
+
+<h5>El mensaje recibido desde el hijo es: {{reciboMensaje}}</h5>
+
+<h3>Segundo contador</h3>
+<p>{{valorContador}}</p>
+
+<h2 appEstiloHermanos>{{nombre | firstPipe}}</h2>
+<h3>Fecha de hoy: <span>{{fecha | date: 'dd:MM:YYYY'}}</span></h3>
+<h3>Cuanto cotiza el dolar: {{dolar | currency: 'EUR'}}</h3>
+<h3>Valor de PI: {{pi | number: '1.2-2'}}</h3>
+<h3>El porcentaje es: {{factor | percent}}</h3>
+<button type="button" (click)="saludar()">Saludar</button>
+<button type="button" (click)="preguntar()">Preguntar por hijo</button>

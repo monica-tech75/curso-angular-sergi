@@ -1,3 +1,12 @@
 h1 {
   color: blueviolet;
 }
+
+h2 {
+  color: green;
+}
+
+h3 > span {
+  color: blue;
+  font-size: 1.5rem;
+}
